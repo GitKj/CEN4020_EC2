@@ -5,4 +5,5 @@ April 2021
 The --trace provides users with a log of the value of the variables during each state as the program runs. 
 Because the program has a few for-loops, a few of the states are being executed on line 14 and 16, and updating variables on line 14, 18 and 20. 
 The assert lines are at the end of the main function, thus it checks the value of the variables (in this case, ‘y’) at the end of the program. 
-CBMC checks the value of the variables and because the value of y at the end of the program is greater than 0, then that assert passes. However, the next assert is checking for if ‘x’ is equal to 0 at the end of the program. This assert fails, thus we know the value of ‘x’ is NOT zero as the program ends.
+CBMC checks the value of the variables and because the value of y at the end of the program is greater than 0, then that assert passes. 
+However, the next assert is checking for if ‘x’ is equal to 0 at the end of the program. This assert fails, thus we know the value of ‘x’ is NOT zero as the program ends.
